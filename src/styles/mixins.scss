@@ -1,0 +1,7 @@
+@use "vars";
+
+@mixin filterBg(){
+
+  background:var(--color-bg6);
+  backdrop-filter: blur(vars.$filter-blur);
+}

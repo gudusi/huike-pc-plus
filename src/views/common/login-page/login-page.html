@@ -1,0 +1,22 @@
+<yo-bg :center="true">
+  <div class="yo-filter-card yo-login-card">
+    <div>
+      <div class="voyo-text-title voyo-li text-center">{{projectName}}</div>
+    </div>
+    <div class="voyo-empty-line">
+      <voyoc-input type="md" size="medium" placeholder="账号" class="1">
+        <i slot="prefix" class="za za-my"></i>
+      </voyoc-input>
+    </div>
+    <div class="voyo-empty-line">
+      <voyoc-input type="md" size="medium" placeholder="密码">
+        <i slot="prefix" class="za za-vf"></i>
+      </voyoc-input>
+    </div>
+    <div class="voyo-empty-line">
+      <voyoc-btn @voyoTap="login" round block size="small" class="my-3">
+        <div class="content">登录</div>
+      </voyoc-btn>
+    </div>
+  </div>
+</yo-bg>

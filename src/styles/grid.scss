@@ -1,0 +1,13 @@
+
+.yo-group{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows:5rem;
+  grid-column-gap: .5rem;
+  grid-row-gap:.5rem;
+}
+@for $i from 1 through 4{
+  .yo-column-#{$i}{
+    grid-column:span $i;
+  }
+}

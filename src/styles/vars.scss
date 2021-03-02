@@ -1,0 +1,22 @@
+$color-primary: #ff9700 !default;
+$color-primary2: #23c8fa !default;
+$color-secondary: rgb(0, 0, 0) !default;
+$color-success:#07c160 !default;
+$color-warn:#ff976a !default;
+$color-error:#ee0a24 !default;
+$color-disabled: #ececec !default;
+$color-gentle:rgb(100,100,100) !default;
+
+$color-primary-light: #ffe900 !default;
+$color-primary2-light: #52c4e3 !default;
+$color-secondary-light: rgb(230,230,230) !default;
+$color-success-light:#07c160 !default;
+$color-warn-light:#ff976a !default;
+$color-error-light:#ee0a24 !default;
+$color-disabled-light: #f6f6f6 !default;
+$color-gentle-light:rgb(240,240,240) !default;
+
+$color-primary-gentle: rgba(255, 151, 0, 0.2) !default;
+$color-primary2-gentle: rgba($color-primary2,.2) !default;
+$filter-blur:10px;
+$base-radius:10px;

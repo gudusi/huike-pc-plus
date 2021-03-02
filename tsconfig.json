@@ -15,10 +15,12 @@
     "types": [
       "webpack-env"
     ],
+    "strictPropertyInitialization": false,
     "paths": {
       "@/*": [
         "src/*"
-      ]
+      ],
+      "@config": ["src/envs/config.d.ts"]
     },
     "lib": [
       "esnext",

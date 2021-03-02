@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "cmNzx";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  
+  src: url("./cmNzx.woff2?name=1614573683981") format("woff2"), url("./cmNzx.woff?name=1614573683981") format("woff"); 
+}
+
+.za {
+  display: inline-block;
+  font-family: "cmNzx";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.za-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.za-xs {
+  font-size: 0.75em;
+}
+
+.za-sm {
+  font-size: 0.875em;
+}
+
+.za-1x {
+  font-size: 1em;
+}
+
+.za-2x {
+  font-size: 2em;
+}
+
+.za-3x {
+  font-size: 3em;
+}
+
+.za-4x {
+  font-size: 4em;
+}
+
+.za-5x {
+  font-size: 5em;
+}
+
+.za-6x {
+  font-size: 6em;
+}
+
+.za-7x {
+  font-size: 7em;
+}
+
+.za-8x {
+  font-size: 8em;
+}
+
+.za-9x {
+  font-size: 9em;
+}
+
+.za-10x {
+  font-size: 10em;
+}
+
+.za-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.za-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.za-pull-left {
+  float: left;
+}
+
+.za-pull-right {
+  float: right;
+}
+
+.za.za-pull-left {
+  margin-right: 0.3em;
+}
+
+.za.za-pull-right {
+  margin-left: 0.3em;
+}
+
+
+.za-about::before {
+  content: "\ea01";
+}
+
+.za-address::before {
+  content: "\ea02";
+}
+
+.za-back::before {
+  content: "\ea03";
+}
+
+.za-call::before {
+  content: "\ea04";
+}
+
+.za-close::before {
+  content: "\ea05";
+}
+
+.za-close-circle::before {
+  content: "\ea06";
+}
+
+.za-complete::before {
+  content: "\ea07";
+}
+
+.za-course::before {
+  content: "\ea08";
+}
+
+.za-customer::before {
+  content: "\ea09";
+}
+
+.za-del-outline::before {
+  content: "\ea0a";
+}
+
+.za-dialogue::before {
+  content: "\ea0b";
+}
+
+.za-down::before {
+  content: "\ea0c";
+}
+
+.za-edit::before {
+  content: "\ea0d";
+}
+
+.za-email::before {
+  content: "\ea0e";
+}
+
+.za-error::before {
+  content: "\ea0f";
+}
+
+.za-exit::before {
+  content: "\ea10";
+}
+
+.za-family::before {
+  content: "\ea11";
+}
+
+.za-friend::before {
+  content: "\ea12";
+}
+
+.za-gift::before {
+  content: "\ea13";
+}
+
+.za-goldCon::before {
+  content: "\ea14";
+}
+
+.za-home::before {
+  content: "\ea15";
+}
+
+.za-home2::before {
+  content: "\ea16";
+}
+
+.za-integral::before {
+  content: "\ea17";
+}
+
+.za-integral2::before {
+  content: "\ea18";
+}
+
+.za-load2::before {
+  content: "\ea19";
+}
+
+.za-loading::before {
+  content: "\ea1a";
+}
+
+.za-loading2::before {
+  content: "\ea1b";
+}
+
+.za-mail2::before {
+  content: "\ea1c";
+}
+
+.za-message::before {
+  content: "\ea1d";
+}
+
+.za-mini-more::before {
+  content: "\ea1e";
+}
+
+.za-more::before {
+  content: "\ea1f";
+}
+
+.za-more2::before {
+  content: "\ea20";
+}
+
+.za-my::before {
+  content: "\ea21";
+}
+
+.za-my2::before {
+  content: "\ea22";
+}
+
+.za-order::before {
+  content: "\ea23";
+}
+
+.za-order-form::before {
+  content: "\ea24";
+}
+
+.za-order-form2::before {
+  content: "\ea25";
+}
+
+.za-pentagon::before {
+  content: "\ea26";
+}
+
+.za-people::before {
+  content: "\ea27";
+}
+
+.za-phone::before {
+  content: "\ea28";
+}
+
+.za-plus::before {
+  content: "\ea29";
+}
+
+.za-qs::before {
+  content: "\ea2a";
+}
+
+.za-qs2::before {
+  content: "\ea2b";
+}
+
+.za-question2::before {
+  content: "\ea2c";
+}
+
+.za-reduce::before {
+  content: "\ea2d";
+}
+
+.za-right::before {
+  content: "\ea2e";
+}
+
+.za-scan-qr::before {
+  content: "\ea2f";
+}
+
+.za-search::before {
+  content: "\ea30";
+}
+
+.za-selected::before {
+  content: "\ea31";
+}
+
+.za-service::before {
+  content: "\ea32";
+}
+
+.za-setting::before {
+  content: "\ea33";
+}
+
+.za-star-fish::before {
+  content: "\ea34";
+}
+
+.za-tech::before {
+  content: "\ea35";
+}
+
+.za-tel::before {
+  content: "\ea36";
+}
+
+.za-tel-fill::before {
+  content: "\ea37";
+}
+
+.za-vf::before {
+  content: "\ea38";
+}
+
+.za-wechat-fill::before {
+  content: "\ea39";
+}
+

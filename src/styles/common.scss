@@ -1,0 +1,45 @@
+@use "vars";
+@use "deps";
+*{
+  box-sizing: border-box;
+}
+:root{
+  --color-primary: #{vars.$color-primary};
+  --radius-base: #{vars.$base-radius};
+  --color-primary-light: #{vars.$color-primary-light};
+  --color-primary-gentle: #{vars.$color-primary-gentle};
+  --color-primary2-gentle: #{vars.$color-primary2-gentle};
+}
+
+.yo-bg,.yo-bg-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  overflow-y:auto;
+  display:flex;
+  &.__center{
+    align-items: center;
+    justify-content: center;
+  }
+}
+.yo-bg{
+  z-index:-1;
+  background-image: url("/image/bg.svg");
+  background-size:cover;
+  //background-image: linear-gradient(45deg,vars.$color-primary,vars.$color-primary-light) ;
+}
+
+.yo-filter-bg{
+  @include deps.m-filterBg;
+}
+.yo-filter-card{
+
+  @include deps.m-filterBg;
+  padding:10px;
+}
+.yo-login-card{
+  @include Radius();
+  width:25rem;
+}

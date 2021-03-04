@@ -1,0 +1,10 @@
+@use "vars";
+
+@each $k,$v in vars.$medias{
+    //root font
+      @media #{$v}{
+        :root{
+          --size-font: #{map-get(vars.$fonts-various, $k)};
+        }
+    }
+}

@@ -7,7 +7,6 @@
 
 <template>
   <div>
-    <nav>nav</nav>
     <slot></slot>
   </div>
 </template>

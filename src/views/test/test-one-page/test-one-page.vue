@@ -11,6 +11,9 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 @Options({})
-export default class extends Vue {}
+export default class extends Vue {
+  arr: any[] = new Array(6).fill(1);
+  name = 1;
+}
 </script>
 <style scoped src="./test-one-page.scss" lang="scss"></style>

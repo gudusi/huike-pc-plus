@@ -1,5 +1,16 @@
-.yo-card{
-  @include Radius();
-  border:1px solid rgba(255,255,255,.2);
-  padding:.5rem;
+@use "vars";
+@use "deps";
+
+.voyo-card{
+  @include deps.m-filterBg;
+  &:first-of-type{
+    margin-top:0;
+  }
+}
+@media #{vars.$media-pc}{
+  .voyo-card-header{
+    &.__title,&>._title{
+      @include text-title(strong);
+    }
+  }
 }

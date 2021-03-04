@@ -1,9 +1,6 @@
+@use "../../../styles/vars";
 @use "../../../styles/deps";
 @import "~@voyo/core-style/lib/components-dep";
-
-$media-mobile:"screen and (max-width: 800px)";
-$media-pc: "screen and (min-width:801px)";
-
 
 .core-main{
 
@@ -12,7 +9,7 @@ $media-pc: "screen and (min-width:801px)";
   position:relative;
   padding:2rem 1rem 1rem 1rem;
 }
-@media #{$media-pc}{
+@media #{vars.$media-pc}{
   .yo-core-main{
     //border:1px solid gainsboro;
     width:90vw;
@@ -30,9 +27,10 @@ $media-pc: "screen and (min-width:801px)";
   }
 
   .yo-core-content{
-    @include deps.m-filterBg;
+    //@include deps.m-filterBg;
     @include Radius($type:large);
-    padding:1rem;
+    padding:0 1rem 1rem 1rem;
+    overflow-y:auto;
   }
 }
 .yo-core-nav{

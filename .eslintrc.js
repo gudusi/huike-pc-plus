@@ -20,6 +20,7 @@ module.exports = {
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "no-empty-pattern": "off",
-    "vue/no-deprecated-slot-attribute": "off"
+    "vue/no-deprecated-slot-attribute": "off",
+    "@typescript-eslint/no-var-requires": "off"
   }
 };

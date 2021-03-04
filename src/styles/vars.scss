@@ -1,5 +1,33 @@
+
+$media-mobile:"screen and (max-width: 799px)";
+$media-pc: "screen and (min-width:800px)";
+
+$media-pc-large: "screen and (min-width: 1900px)";
+$media-pc-strong: "screen and (min-width:1600px) and (max-width:1899px)";
+$media-pc-medium: "screen and (max-width:1599px) and (min-width:1150px)";
+$media-pc-small: "screen and (max-width:1149px) and (min-width:900px)";
+$media-pc-mini:  "screen and (max-width:899px) and (min-width:800px)";
+
+$medias:(
+  large:$media-pc-large,
+  strong:$media-pc-strong,
+  medium:$media-pc-medium,
+  small:$media-pc-small,
+  mini:$media-pc-mini,
+  mobile:$media-mobile
+) !default;
+
+$fonts-various:(
+  large:15px,
+  strong:14px,
+  medium:13px,
+  small:12px,
+  mini:12px,
+  mobile:14px
+);
+
 $color-primary: #ff9700 !default;
-$color-primary2: #23c8fa !default;
+$color-primary2: #7d23fa !default;
 $color-secondary: rgb(0, 0, 0) !default;
 $color-success:#07c160 !default;
 $color-warn:#ff976a !default;
@@ -8,7 +36,7 @@ $color-disabled: #ececec !default;
 $color-gentle:rgb(100,100,100) !default;
 
 $color-primary-light: #ffe900 !default;
-$color-primary2-light: #52c4e3 !default;
+$color-primary2-light: lighten($color-primary2,10%) !default;
 $color-secondary-light: rgb(230,230,230) !default;
 $color-success-light:#07c160 !default;
 $color-warn-light:#ff976a !default;
@@ -20,3 +48,4 @@ $color-primary-gentle: rgba(255, 151, 0, 0.2) !default;
 $color-primary2-gentle: rgba($color-primary2,.2) !default;
 $filter-blur:10px;
 $base-radius:10px;
+$color-after-border:rgba(160,140,120,.4) !default;

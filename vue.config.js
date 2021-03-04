@@ -1,3 +1,4 @@
+/* eslint no-use-before-define: 0 */
 const path = require("path");
 const join = (...args) => path.join(__dirname, ...args);
 
@@ -15,7 +16,7 @@ const sassOpts = {
 };
 
 if (isDev) {
-  new ManageTempalteWatchDir().watch(join("src"));
+  // new ManageTempalteWatchDir().watch(join("src"));
 }
 
 module.exports = {
@@ -24,7 +25,17 @@ module.exports = {
     resolve: {
       alias: {
         "@config": join(`src/envs/config.${env}.ts`)
-      }
+      },
+      extensions:[
+        ".tsx",
+        '.ts',
+        '.mjs',
+        '.js',
+        '.jsx',
+        '.vue',
+        '.json',
+        '.wasm'
+      ]
     }
   },
   chainWebpack: config => {

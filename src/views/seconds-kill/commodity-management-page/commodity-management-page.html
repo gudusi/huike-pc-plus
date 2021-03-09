@@ -1,0 +1,93 @@
+
+<yo-card footerAlign="right">
+    <template #header>
+        <voyoc-btn>+添加商品</voyoc-btn>
+        <div class="flex">
+            <el-input v-model="name"   placeholder="竞品名称">
+
+            </el-input>
+            <voyoc-btn>搜索</voyoc-btn>
+        </div>
+    </template>
+    <div></div>
+</yo-card>
+
+
+<!--列表-->
+
+<yo-card>
+    <template #header>
+<!--        <voyoc-btn>+添加商品</voyoc-btn>-->
+<div class="flex">
+    <div class="active-title mr-1 ">车友会活动名称</div>
+    <div class="active-title-time">2021-03-06 10：46：03 添加该商品</div>
+</div>
+        <div class="flex">
+            <div class="pr-4 setup ">
+                <i class="za za-setting"></i>
+                <span>设置</span>
+            </div>
+            <div class="delete">
+                <i class="za za-setting"></i>
+                <span>删除</span>
+            </div>
+        </div>
+    </template>
+    <div class="flex" >
+        <div class="flex-1 flex-center voyo-border-right flex-vertical-center">
+            <div class="card-one">
+               <div class="img-part">
+                   <div class="commodity-img-box mr-3">
+<!--tupian-->
+                   </div>
+                   <div class="info-box flex-1">
+                       <div class="">立白洗衣商品名称</div>
+                       <div class="info-price">
+                           <div class="miaosha-box ">
+                               <div class="pr-4">
+                                   <div>rmb</div>
+                                   <div class="delete">秒杀价</div>
+                               </div>
+                               <div class="price">9.9</div>
+                           </div>
+                           <div class="p-3">
+                               <div class="kucun-box">
+                                   <div>库存</div>
+                                   <div class="color-success">10</div>
+                               </div>
+                               <div class="flex">
+                                   <div>每轮秒杀时长（秒）</div>
+                                   <div>200</div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+                <div class="flex mt-2">
+                    <div class="flex-1 flex-center voyo-border-right-small p-3">围观人数 0 </div>
+                    <div class="flex-1 flex-center p-3">已售数量 0</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 flex-center code-box">
+            <div class="code-down-box">
+                <div class="code-down">
+                    <div class="za za-qr-code icon-size"></div>
+                    <div>二维码下载</div>
+                </div>
+            </div>
+            <div class="code-down-box">
+                <div class="code-down">
+                    <div class="za za-cup icon-size"></div>
+                    <div>抢购记录</div>
+                </div>
+            </div>
+            <div class="code-down-box">
+                <div class="code-down">
+                    <div class="za za-screen icon-size-two"></div>
+                    <div>投放大屏</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</yo-card>

@@ -2,8 +2,10 @@
 @use "../../../styles/deps";
 @import "~@voyo/core-style/lib/components-dep";
 
+$nav-width:300px;
+$main-height:90vh;
 .core-main{
-
+  //color: #f5f5f5;
 }
 .yo-core-user{
   position:relative;
@@ -13,21 +15,29 @@
   .yo-core-main{
     //border:1px solid gainsboro;
     width:90vw;
-    height:85vh;
     max-width: 1400px;
-    margin:7.5vh auto 7.5vh auto;
-    min-height:600px;
-    display:grid;
-    grid-template-columns: 300px 1fr;
-    grid-column-gap: 1.5rem;
+    margin:10vh auto 0 auto;
+
   }
   .yo-core-nav{
-    @include deps.m-filterBg;
-    @include Radius($type:large);
+    width: $nav-width;
+    display:inline-block;
+    vertical-align: top;
+    height:10px;
+    position:sticky;
+    top:10vh;
+    width: $nav-width;
+    .yo-core-nav-inner{
+      @include Radius($type:large);
+      @include deps.m-filterBg;
+      @include deps.m-shadowCard;
+      height:88vh;
+    }
   }
 
   .yo-core-content{
-    //@include deps.m-filterBg;
+    width: calc(90vw - #{$nav-width});
+    display: inline-block;
     @include Radius($type:large);
     padding:0 1rem 1rem 1rem;
     overflow-y:auto;

@@ -1,0 +1,15 @@
+@use "vars";
+
+:root{
+  --color-white:#{vars.$color-white};
+  --color-black:#{vars.$color-black};
+  --color-bg:#{vars.$color-white};
+  --color-primary: #{vars.$color-primary};
+  --color-primary2: #{vars.$color-primary2};
+  --radius-base: #{vars.$base-radius};
+  --color-primary-light: #{vars.$color-primary-light};
+  --color-primary-gentle: #{vars.$color-primary-gentle};
+  --color-primary2-gentle: #{vars.$color-primary2-gentle};
+  --color-after-border: #{vars.$color-after-border};
+  --color-bg3: #{rgba(white,.3)};
+}

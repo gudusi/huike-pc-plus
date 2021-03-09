@@ -1,2 +1,15 @@
+@use "vars";
+$--color-primary: vars.$color-primary;
+$--color-white: vars.$color-white;
+$--input-border: 1px solid rgb(240,240,240);
+$--input-border-color: rgb(240,240,240);
+$--input-border-radius: 20px;
+$--input-background-color: rgb(245,249,249);
+
 @import "~element-plus/packages/theme-chalk/src/input.scss";
 @import "~element-plus/packages/theme-chalk/src/input-number.scss";
+@import "~element-plus/packages/theme-chalk/src/pagination.scss";
+@import "~element-plus/packages/theme-chalk/src/select.scss";
+@import "~element-plus/packages/theme-chalk/src/select-dropdown.scss";
+@import "~element-plus/packages/theme-chalk/src/date-picker.scss";
+@import "~element-plus/packages/theme-chalk/src/time-picker.scss";

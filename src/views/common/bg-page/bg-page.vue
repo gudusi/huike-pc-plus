@@ -8,12 +8,12 @@
 
 <template>
   <div class="yo-bg-wrapper" :class="[center ? '__center' : '']">
-    <div class="yo-bg">
-      <!--      <svg viewBox="0 0 1024 1024" width="500" height="500">-->
-      <!--        <rect width="400" height="400" fill="red" x="0"></rect>-->
-      <!--      </svg>-->
-      <img />
-    </div>
+    <!--    <div class="yo-bg">-->
+    <!--      <svg viewBox="0 0 1024 1024" width="500" height="500">-->
+    <!--        <rect width="400" height="400" fill="red" x="0"></rect>-->
+    <!--      </svg>-->
+    <!--      <img />-->
+    <!--    </div>-->
     <slot></slot>
   </div>
 </template>

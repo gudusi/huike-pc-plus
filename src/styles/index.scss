@@ -1,11 +1,10 @@
-
-
 @import "~@voyo/core-style/lib/css-vars-root";
+@import "css-root-vars";
+@import "voyo-vars";
 @import "~@voyo/core-style/lib/main.scss";
 @import "common";
 @import "grid";
 @import "card";
 $--font-path: "../../node_modules/element-plus/packages/theme-chalk/src/fonts";
 @import "ele";
-//@import "~element-plus/packages/theme-chalk/src/index";
 @import "media";

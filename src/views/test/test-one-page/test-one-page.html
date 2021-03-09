@@ -1,14 +1,16 @@
 <yo-card header="查詢">
 <!--    card content-->
     <yo-group>
-        <yo-cell label="姓名" v-for="(i,index) in arr" :key="index">
-            <el-input type="candy"/>
+        <yo-cell  label="姓名" v-for="(i,index) in arr" :key="index">
+            <el-input v-model="testVal" type="candy"/>
         </yo-cell>
         <yo-cell label="年齡" span="2">
             <el-input></el-input>
         </yo-cell>
-        <yo-cell label="必填" :important="true">
-            <el-input></el-input>
+        <yo-cell label="必填嘻嘻" :important="true">
+            <el-select>
+
+            </el-select>
         </yo-cell>
 
         <yo-cell label="三列" span="3">
@@ -17,8 +19,8 @@
     </yo-group>
 <!--    插入card footer-->
     <template #footer>
-        <voyoc-btn>查詢</voyoc-btn>
-        <voyoc-btn>重置</voyoc-btn>
+        <voyoc-btn type="outline">查詢</voyoc-btn>
+        <voyoc-btn type="candy">重置</voyoc-btn>
     </template>
 </yo-card>
 

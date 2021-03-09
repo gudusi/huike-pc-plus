@@ -1,8 +1,10 @@
 <yo-bg :center="false">
     <main class="yo-core-main">
         <nav class="yo-core-nav">
-            <yo-core-nav-user />
-            <yo-core-nav/>
+            <div class="yo-core-nav-inner">
+                <yo-core-nav-user />
+                <yo-core-nav/>
+            </div>
         </nav>
         <yo-core-content class="yo-core-content">
             <router-view></router-view>

@@ -57,17 +57,12 @@ export const Card = (
   props: { header?: string; footerAlign?: string } & any,
   { attrs, slots }: any
 ) => {
-  console.log(props.footerAlign);
   return (
     <div class={"voyo-card"} {...extractKeys(props, ["header"])}>
       {props.header || slots.header ? (
         <>
-          <header
-            class={["voyo-card-header", props.header ? "__title" : ""].join(
-              " "
-            )}
-          >
-            {props.header}
+          <header class={["voyo-card-header"].join(" ")}>
+            {props.header ? <span class="_title">{props.header}</span> : null}
             {slots.header && slots.header()}
           </header>
           <article class={"voyo-card-content"}>{slots.default()}</article>

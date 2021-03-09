@@ -1,17 +1,58 @@
 @use "vars";
 @use "deps";
 
+
+$card-title-plate-h:1em;
+$card-title-colors:var(--color-primary2) var(--color-primary) #52c4e3 var(--color-success) var(--color-error);
 .voyo-card{
   @include deps.m-filterBg;
+  @include deps.m-shadowCard;
   @include Radius($type:large);
   &:first-of-type{
     margin-top:0;
   }
+
 }
 @media #{vars.$media-pc}{
+  .voyo-card{
+    margin-bottom:1.5rem;
+  }
   .voyo-card-header{
+    margin-bottom:1.5rem;
+    padding-bottom: 0;
+    &::before{
+      @include Radius();
+      content:"";
+      position: absolute;
+      top:50%;
+      left:-1em;
+      height:1em;
+      width:.3em;
+      transform: translateY(-50%);
+      background:var(--color-primary2-light);
+      opacity:.8;
+    }
     &.__title,&>._title{
       @include text-title(strong);
+      position: relative;
+    }
+    &::after{
+      content:none;
     }
   }
+  @for $i from 1 through 5{
+    .voyo-card{
+      &:nth-of-type(#{$i}){
+        .voyo-card-header {
+          &::before {
+            background: nth($card-title-colors,$i);
+          }
+        }
+      }
+    }
+  }
+  @each $ke in $card-title-colors{
+
+  }
+
 }

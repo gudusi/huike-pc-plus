@@ -27,7 +27,7 @@ $fonts-various:(
 );
 
 $color-primary: #ff9700 !default;
-$color-primary2: #7d23fa !default;
+$color-primary2: mix(#7d23fa,$color-primary,70%) !default;
 $color-secondary: rgb(0, 0, 0) !default;
 $color-success:#07c160 !default;
 $color-warn:#ff976a !default;
@@ -44,8 +44,14 @@ $color-error-light:#ee0a24 !default;
 $color-disabled-light: #f6f6f6 !default;
 $color-gentle-light:rgb(240,240,240) !default;
 
-$color-primary-gentle: rgba(255, 151, 0, 0.2) !default;
+$color-primary-gentle: rgba(255, 151, 0, 0.15) !default;
 $color-primary2-gentle: rgba($color-primary2,.2) !default;
 $filter-blur:10px;
-$base-radius:10px;
+$base-radius:15px;
 $color-after-border:rgba(160,140,120,.4) !default;
+
+$color-white: rgba(white,.9) !default;
+$color-black: black !default;
+$color-shadow: rgba(0,0,0,0.2);
+
+$color-border-card: rgb(240,240,240);

@@ -13,7 +13,7 @@ import { Options, Vue } from "vue-class-component";
 @Options({})
 export default class extends Vue {
   arr: any[] = new Array(6).fill(1);
-  name = 1;
+  testVal = "xx";
 }
 </script>
 <style scoped src="./test-one-page.scss" lang="scss"></style>

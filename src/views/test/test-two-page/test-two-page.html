@@ -1,3 +1,13 @@
 <div>
-    testTwoPage
+    <yo-card header="qrcode test">
+
+        <self-qrcode
+          :height="height"
+          :width="width"
+          ref="qrcode"
+        ></self-qrcode>
+        <template #footer>
+            <voyoc-btn @voyoTap="tap">2</voyoc-btn>
+        </template>
+    </yo-card>
 </div>

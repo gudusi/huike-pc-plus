@@ -3,6 +3,7 @@
 
 .voyo-card{
   @include deps.m-filterBg;
+  @include Radius($type:large);
   &:first-of-type{
     margin-top:0;
   }

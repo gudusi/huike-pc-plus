@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "runtime:dev": "cross-env NODE_ENV=development & vue-cli-service serve",
+    "buid:prod": "cross-env NODE_ENV=production & vue-cli-service build",
     "webfont": "cmWebfont start"
   },
   "dependencies": {
@@ -45,6 +44,7 @@
     "lint-staged": "^9.5.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
+    "qrcode": "^1.4.4",
     "sass": "^1.32.8",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",

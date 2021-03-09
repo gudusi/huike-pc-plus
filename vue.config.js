@@ -16,7 +16,7 @@ const sassOpts = {
 };
 
 if (isDev) {
-  // new ManageTempalteWatchDir().watch(join("src"));
+  new ManageTempalteWatchDir().watch(join("src"));
 }
 
 module.exports = {

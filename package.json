@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "runtime:dev": "cross-env NODE_ENV=development & vue-cli-service serve",
-    "webfont": "cmWebfont start"
+    "webfont": "cmWebfont start",
+    "lint:fix": "eslint --fix --ext .ts --ext .vue src"
   },
   "dependencies": {
     "@voyo/core": "github:zhantewei2/voyo-core#master",

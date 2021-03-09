@@ -19,5 +19,13 @@ export const mainRouter: Array<RouteRecordRaw> = [
     component: loadPage(() =>
       import("../views/test/test-three-page/test-three-page.vue")
     )
+  },
+  {
+    path: "seconds/create",
+    component: loadPage(() =>
+      import(
+        "../views/seconds-kill/create-activities-page/create-activities-page.vue"
+      )
+    )
   }
 ];

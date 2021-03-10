@@ -27,5 +27,25 @@ export const mainRouter: Array<RouteRecordRaw> = [
         "../views/seconds-kill/create-activities-page/create-activities-page.vue"
       )
     )
+  },
+  {
+    path: "seconds/management",
+    component: loadPage(() =>
+      import(
+        "../views/seconds-kill/commodity-management-page/commodity-management-page.vue"
+      )
+    )
+  },
+  {
+    path: "seconds/add",
+    component: loadPage(() =>
+      import("../views/seconds-kill/commodity-add-page/commodity-add-page.vue")
+    )
+  },
+  {
+    path: "seconds/rush",
+    component: loadPage(() =>
+      import("../views/seconds-kill/rush-record-page/rush-record-page.vue")
+    )
   }
 ];

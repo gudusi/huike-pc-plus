@@ -19,7 +19,9 @@ export const navDataTest: NavListItem[] = [
     icon: "family",
     children: [
       { label: "创建活动", path: "/main/seconds/create" },
-      { label: "兰儿", path: "/main/test/two" }
+      { label: "商品管理", path: "/main/seconds/management" },
+      { label: "商品添加", path: "/main/seconds/add" },
+      { label: "抢购记录", path: "/main/seconds/rush" }
     ]
   }
 ];

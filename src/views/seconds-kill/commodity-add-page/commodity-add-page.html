@@ -1,0 +1,20 @@
+<yo-card header="秒杀">
+    <!--    card content-->
+    <yo-group>
+        <yo-cell label="活动名称" span="3">
+            <el-input v-model="age"></el-input>
+        </yo-cell>
+
+
+        <yo-cell label="每轮时长" span="1">
+            <el-input></el-input>
+        </yo-cell>
+        <span>(每轮秒杀的时间)</span>
+
+    </yo-group>
+    <!--    插入card footer-->
+    <template #footer>
+        <voyoc-btn>查詢</voyoc-btn>
+        <voyoc-btn>重置</voyoc-btn>
+    </template>
+</yo-card>

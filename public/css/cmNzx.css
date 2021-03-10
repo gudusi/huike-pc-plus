@@ -4,7 +4,7 @@
   font-weight: 400;
   font-display: auto;
   
-  src: url("./cmNzx.woff2?name=1614573683981") format("woff2"), url("./cmNzx.woff?name=1614573683981") format("woff"); 
+  src: url("./cmNzx.woff2?name=1615284806076") format("woff2"), url("./cmNzx.woff?name=1615284806076") format("woff"); 
 }
 
 .za {
@@ -133,199 +133,211 @@
   content: "\ea08";
 }
 
-.za-customer::before {
+.za-cup::before {
   content: "\ea09";
 }
 
-.za-del-outline::before {
+.za-customer::before {
   content: "\ea0a";
 }
 
-.za-dialogue::before {
+.za-del-outline::before {
   content: "\ea0b";
 }
 
-.za-down::before {
+.za-dialogue::before {
   content: "\ea0c";
 }
 
-.za-edit::before {
+.za-down::before {
   content: "\ea0d";
 }
 
-.za-email::before {
+.za-edit::before {
   content: "\ea0e";
 }
 
-.za-error::before {
+.za-email::before {
   content: "\ea0f";
 }
 
-.za-exit::before {
+.za-error::before {
   content: "\ea10";
 }
 
-.za-family::before {
+.za-exit::before {
   content: "\ea11";
 }
 
-.za-friend::before {
+.za-family::before {
   content: "\ea12";
 }
 
-.za-gift::before {
+.za-friend::before {
   content: "\ea13";
 }
 
-.za-goldCon::before {
+.za-gift::before {
   content: "\ea14";
 }
 
-.za-home::before {
+.za-goldCon::before {
   content: "\ea15";
 }
 
-.za-home2::before {
+.za-home::before {
   content: "\ea16";
 }
 
-.za-integral::before {
+.za-home2::before {
   content: "\ea17";
 }
 
-.za-integral2::before {
+.za-integral::before {
   content: "\ea18";
 }
 
-.za-load2::before {
+.za-integral2::before {
   content: "\ea19";
 }
 
-.za-loading::before {
+.za-load2::before {
   content: "\ea1a";
 }
 
-.za-loading2::before {
+.za-loading::before {
   content: "\ea1b";
 }
 
-.za-mail2::before {
+.za-loading2::before {
   content: "\ea1c";
 }
 
-.za-message::before {
+.za-mail2::before {
   content: "\ea1d";
 }
 
-.za-mini-more::before {
+.za-message::before {
   content: "\ea1e";
 }
 
-.za-more::before {
+.za-mini-more::before {
   content: "\ea1f";
 }
 
-.za-more2::before {
+.za-more::before {
   content: "\ea20";
 }
 
-.za-my::before {
+.za-more2::before {
   content: "\ea21";
 }
 
-.za-my2::before {
+.za-my::before {
   content: "\ea22";
 }
 
-.za-order::before {
+.za-my2::before {
   content: "\ea23";
 }
 
-.za-order-form::before {
+.za-order::before {
   content: "\ea24";
 }
 
-.za-order-form2::before {
+.za-order-form::before {
   content: "\ea25";
 }
 
-.za-pentagon::before {
+.za-order-form2::before {
   content: "\ea26";
 }
 
-.za-people::before {
+.za-pentagon::before {
   content: "\ea27";
 }
 
-.za-phone::before {
+.za-people::before {
   content: "\ea28";
 }
 
-.za-plus::before {
+.za-phone::before {
   content: "\ea29";
 }
 
-.za-qs::before {
+.za-plus::before {
   content: "\ea2a";
 }
 
-.za-qs2::before {
+.za-qr-code::before {
   content: "\ea2b";
 }
 
-.za-question2::before {
+.za-qs::before {
   content: "\ea2c";
 }
 
-.za-reduce::before {
+.za-qs2::before {
   content: "\ea2d";
 }
 
-.za-right::before {
+.za-question2::before {
   content: "\ea2e";
 }
 
-.za-scan-qr::before {
+.za-reduce::before {
   content: "\ea2f";
 }
 
-.za-search::before {
+.za-right::before {
   content: "\ea30";
 }
 
-.za-selected::before {
+.za-scan-qr::before {
   content: "\ea31";
 }
 
-.za-service::before {
+.za-screen::before {
   content: "\ea32";
 }
 
-.za-setting::before {
+.za-search::before {
   content: "\ea33";
 }
 
-.za-star-fish::before {
+.za-selected::before {
   content: "\ea34";
 }
 
-.za-tech::before {
+.za-service::before {
   content: "\ea35";
 }
 
-.za-tel::before {
+.za-setting::before {
   content: "\ea36";
 }
 
-.za-tel-fill::before {
+.za-star-fish::before {
   content: "\ea37";
 }
 
-.za-vf::before {
+.za-tech::before {
   content: "\ea38";
 }
 
-.za-wechat-fill::before {
+.za-tel::before {
   content: "\ea39";
+}
+
+.za-tel-fill::before {
+  content: "\ea3a";
+}
+
+.za-vf::before {
+  content: "\ea3b";
+}
+
+.za-wechat-fill::before {
+  content: "\ea3c";
 }
 

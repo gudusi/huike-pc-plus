@@ -41,11 +41,11 @@ export const mainRouter: Array<RouteRecordRaw> = [
     component: loadPage(() =>
       import("../views/seconds-kill/commodity-add-page/commodity-add-page.vue")
     )
-  },
-  {
-    path: "seconds/rush",
-    component: loadPage(() =>
-      import("../views/seconds-kill/rush-record-page/rush-record-page.vue")
-    )
   }
+  // {
+  //   path: "seconds/rush",
+  //   component: loadPage(() =>
+  //     import("../views/seconds-kill/rush-record-page/rush-record-page.vue")
+  //   )
+  // }
 ];

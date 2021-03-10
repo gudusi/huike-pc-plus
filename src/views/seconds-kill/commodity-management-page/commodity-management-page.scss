@@ -1,3 +1,6 @@
+@import "~@voyo/core-style/lib/components-dep";
+@import "../../../styles/vars";
+
 .title-box{
   display: flex;
   justify-content: space-between;
@@ -89,4 +92,14 @@
 }
 .color-success{
   color:var(--color-success);
+}
+.self-card{
+  position:relative;
+  background:var(--color-gentle-gentle);
+  width:6rem;
+  height:6rem;
+  @include Radius();
+  i{
+    font-size: 2rem;
+  }
 }

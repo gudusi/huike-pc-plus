@@ -26,7 +26,7 @@ $fonts-various:(
   mobile:14px
 );
 
-$color-primary: #ff9700 !default;
+$color-primary: #3470b9 !default;
 $color-primary2: mix(#7d23fa,$color-primary,70%) !default;
 $color-secondary: rgb(0, 0, 0) !default;
 $color-success:#07c160 !default;
@@ -35,7 +35,7 @@ $color-error:#ee0a24 !default;
 $color-disabled: #ececec !default;
 $color-gentle:rgb(100,100,100) !default;
 
-$color-primary-light: #ffe900 !default;
+$color-primary-light: lighten($color-primary,15%) !default;
 $color-primary2-light: lighten($color-primary2,10%) !default;
 $color-secondary-light: rgb(230,230,230) !default;
 $color-success-light:#07c160 !default;
@@ -44,7 +44,7 @@ $color-error-light:#ee0a24 !default;
 $color-disabled-light: #f6f6f6 !default;
 $color-gentle-light:rgb(240,240,240) !default;
 
-$color-primary-gentle: rgba(255, 151, 0, 0.15) !default;
+$color-primary-gentle: rgba(153 ,204 ,234, 0.15) !default;
 $color-primary2-gentle: rgba($color-primary2,.2) !default;
 $filter-blur:10px;
 $base-radius:15px;
@@ -55,9 +55,12 @@ $color-black: black !default;
 $color-shadow: rgba(0,0,0,0.2);
 
 $color-border-card: rgb(240,240,240);
+<<<<<<< HEAD
 
 $indexs:(
   pageModal:20,
   pageModalHeader:22,
   pageModalFooter:21
 ) !default;
+=======
+>>>>>>> bf81ecb2b217dde1e93771f3a5cc0491650b7082

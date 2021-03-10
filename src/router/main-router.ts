@@ -41,6 +41,24 @@ export const mainRouter: Array<RouteRecordRaw> = [
     component: loadPage(() =>
       import("../views/seconds-kill/commodity-add-page/commodity-add-page.vue")
     )
+  },
+  {
+    path: "createGame",
+    component: loadPage(() =>
+      import("../views/games/create-game-page/create-game-page.vue")
+    )
+  },
+  {
+    path: "gamesList",
+    component: loadPage(() =>
+      import("../views/games/games-list-page/games-list-page.vue")
+    )
+  },
+  {
+    path: "gamesRecord",
+    component: loadPage(() =>
+      import("../views/games/games-record-page/games-record-page.vue")
+    )
   }
   // {
   //   path: "seconds/rush",

@@ -72,11 +72,11 @@ module.exports = {
         compilerOptions: {
           isCustomElement: tag => {
             return [
-              "voyoc-btn",
-              // "voyoc-input",
-              "voyoc-btn-icon",
-              "voyoc-menu",
-              "voyoc-dialog"
+              // "voyoc-btn",
+              // // "voyoc-input",
+              // "voyoc-btn-icon",
+              // "voyoc-menu",
+              // "voyoc-dialog"
             ].includes(tag);
           },
           ...vueLoaderOpts

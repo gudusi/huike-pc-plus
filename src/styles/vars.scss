@@ -26,7 +26,7 @@ $fonts-various:(
   mobile:14px
 );
 
-$color-primary: #ff9700 !default;
+$color-primary: #3470b9 !default;
 $color-primary2: mix(#7d23fa,$color-primary,70%) !default;
 $color-secondary: rgb(0, 0, 0) !default;
 $color-success:#07c160 !default;
@@ -44,7 +44,7 @@ $color-error-light:#ee0a24 !default;
 $color-disabled-light: #f6f6f6 !default;
 $color-gentle-light:rgb(240,240,240) !default;
 
-$color-primary-gentle: rgba(255, 151, 0, 0.15) !default;
+$color-primary-gentle: rgba(153 ,204 ,234, 0.15) !default;
 $color-primary2-gentle: rgba($color-primary2,.2) !default;
 $filter-blur:10px;
 $base-radius:15px;

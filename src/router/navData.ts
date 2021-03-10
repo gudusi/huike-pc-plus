@@ -15,6 +15,15 @@ export const navDataTest: NavListItem[] = [
     children: [{ label: "懒散", path: "/main/test/three" }]
   },
   {
+    label: "小游戏管理",
+    icon: "family",
+    children: [
+      { label: "创建活动", path: "/main/createGame" },
+      { label: "小游戏列表", path: "/main/gamesList" },
+      { label: "中奖记录", path: "/main/gamesRecord" }
+    ]
+  },
+  {
     label: "商品秒杀",
     icon: "family",
     children: [

@@ -21,8 +21,31 @@
     <template #footer>
         <voyoc-btn type="outline">查詢</voyoc-btn>
         <voyoc-btn type="candy">重置</voyoc-btn>
+        <voyoc-btn @voyoTap="pageModalShow=true">pageModal打开</voyoc-btn>
     </template>
 </yo-card>
+
+<yo-page-modal title="新增一个页面" v-model="pageModalShow">
+    <div>
+        <yo-group>
+            <yo-cell label="年齡" span="2">
+                <el-input v-model="age"></el-input>
+            </yo-cell>
+            <yo-cell label="必填嘻嘻" :important="true">
+                <el-select>
+
+                </el-select>
+            </yo-cell>
+        </yo-group>
+<!--        <div style="height:600px;background-image:linear-gradient(to bottom,red,blue)">-->
+
+<!--        </div>-->
+    </div>
+    <template #footer>
+        <voyoc-btn type="candy" @voyoTap="closeModal">确定</voyoc-btn>
+        <voyoc-btn type="candy" @voyoTap="closeModal" color="gentle">关闭</voyoc-btn>
+    </template>
+</yo-page-modal>
 
 <yo-card header="結果">
     <div> yo card</div>

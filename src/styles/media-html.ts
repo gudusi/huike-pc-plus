@@ -1,6 +1,8 @@
-import { fromEvent, merge, Subscription, of } from "rxjs";
+import { fromEvent, merge, Subscription, of, Subject, Observable } from "rxjs";
 import { map, distinctUntilChanged, debounceTime } from "rxjs/operators";
 import { ClassManage } from "@voyo/core/dest/utils";
+import { ioc } from "@voyo/core";
+import { IOCProvider } from "@voyo/core/dest";
 
 export type MediaSize =
   | "large"
@@ -19,9 +21,25 @@ export const rules: Record<MediaSize, number> = {
   mobile: 0
 };
 
+@IOCProvider({
+  name: "yo-media"
+})
 export class MediaHtml {
   mediaSizeSubscription: Subscription;
+  isMobileValue: boolean;
+  isMobile: Subject<boolean> = new Subject<boolean>();
 
+  isMobileImmediate: Observable<boolean> = merge(
+    of(null).pipe(map(i => this.isMobileValue)),
+    this.isMobile
+  );
+
+  handleIsMobile(mediaSize: MediaSize) {
+    const isMobileValue = mediaSize === "mobile";
+    if (isMobileValue !== this.isMobileValue) {
+      this.isMobile.next((this.isMobileValue = isMobileValue));
+    }
+  }
   constructor() {
     let windowWidth: number;
     const rulesValue: number[] = Object.values(rules);
@@ -29,7 +47,7 @@ export class MediaHtml {
     const html = document.documentElement;
     const htmlClassManager = new ClassManage(html);
     this.mediaSizeSubscription = merge(
-      of(window.innerWidth),
+      of(1).pipe(map(() => window.innerWidth)),
       fromEvent(window, "resize").pipe(debounceTime(50))
     )
       .pipe(
@@ -47,9 +65,12 @@ export class MediaHtml {
         distinctUntilChanged()
       )
       .subscribe((mediaSize: MediaSize) => {
+        this.handleIsMobile(mediaSize);
         htmlClassManager.replaceClass("mediaSize", "yo-media-" + mediaSize);
       });
   }
 }
 
-export const mediaHtml = new MediaHtml();
+const mediaHtml: MediaHtml = ioc.getService("yo-media");
+
+export { mediaHtml };

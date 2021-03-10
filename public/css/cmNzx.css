@@ -4,7 +4,7 @@
   font-weight: 400;
   font-display: auto;
   
-  src: url("./cmNzx.woff2?name=1615284806076") format("woff2"), url("./cmNzx.woff?name=1615284806076") format("woff"); 
+  src: url("./cmNzx.woff2?name=1615354127761") format("woff2"), url("./cmNzx.woff?name=1615354127761") format("woff"); 
 }
 
 .za {
@@ -105,239 +105,227 @@
   content: "\ea01";
 }
 
-.za-address::before {
+.za-back::before {
   content: "\ea02";
 }
 
-.za-back::before {
+.za-call::before {
   content: "\ea03";
 }
 
-.za-call::before {
+.za-close::before {
   content: "\ea04";
 }
 
-.za-close::before {
+.za-close-circle::before {
   content: "\ea05";
 }
 
-.za-close-circle::before {
+.za-complete::before {
   content: "\ea06";
 }
 
-.za-complete::before {
+.za-course::before {
   content: "\ea07";
 }
 
-.za-course::before {
+.za-customer::before {
   content: "\ea08";
 }
 
-.za-cup::before {
+.za-del-outline::before {
   content: "\ea09";
 }
 
-.za-customer::before {
+.za-dialogue::before {
   content: "\ea0a";
 }
 
-.za-del-outline::before {
+.za-down::before {
   content: "\ea0b";
 }
 
-.za-dialogue::before {
+.za-edit::before {
   content: "\ea0c";
 }
 
-.za-down::before {
+.za-email::before {
   content: "\ea0d";
 }
 
-.za-edit::before {
+.za-error::before {
   content: "\ea0e";
 }
 
-.za-email::before {
+.za-exit::before {
   content: "\ea0f";
 }
 
-.za-error::before {
+.za-family::before {
   content: "\ea10";
 }
 
-.za-exit::before {
+.za-friend::before {
   content: "\ea11";
 }
 
-.za-family::before {
+.za-gift::before {
   content: "\ea12";
 }
 
-.za-friend::before {
+.za-goldCon::before {
   content: "\ea13";
 }
 
-.za-gift::before {
+.za-home::before {
   content: "\ea14";
 }
 
-.za-goldCon::before {
+.za-home2::before {
   content: "\ea15";
 }
 
-.za-home::before {
+.za-integral::before {
   content: "\ea16";
 }
 
-.za-home2::before {
+.za-integral2::before {
   content: "\ea17";
 }
 
-.za-integral::before {
+.za-load2::before {
   content: "\ea18";
 }
 
-.za-integral2::before {
+.za-loading::before {
   content: "\ea19";
 }
 
-.za-load2::before {
+.za-loading2::before {
   content: "\ea1a";
 }
 
-.za-loading::before {
+.za-mail2::before {
   content: "\ea1b";
 }
 
-.za-loading2::before {
+.za-menu::before {
   content: "\ea1c";
 }
 
-.za-mail2::before {
+.za-message::before {
   content: "\ea1d";
 }
 
-.za-message::before {
+.za-mini-more::before {
   content: "\ea1e";
 }
 
-.za-mini-more::before {
+.za-more::before {
   content: "\ea1f";
 }
 
-.za-more::before {
+.za-more2::before {
   content: "\ea20";
 }
 
-.za-more2::before {
+.za-my::before {
   content: "\ea21";
 }
 
-.za-my::before {
+.za-my2::before {
   content: "\ea22";
 }
 
-.za-my2::before {
+.za-order::before {
   content: "\ea23";
 }
 
-.za-order::before {
+.za-order-form::before {
   content: "\ea24";
 }
 
-.za-order-form::before {
+.za-order-form2::before {
   content: "\ea25";
 }
 
-.za-order-form2::before {
+.za-pentagon::before {
   content: "\ea26";
 }
 
-.za-pentagon::before {
+.za-people::before {
   content: "\ea27";
 }
 
-.za-people::before {
+.za-phone::before {
   content: "\ea28";
 }
 
-.za-phone::before {
+.za-plus::before {
   content: "\ea29";
 }
 
-.za-plus::before {
+.za-qs::before {
   content: "\ea2a";
 }
 
-.za-qr-code::before {
+.za-qs2::before {
   content: "\ea2b";
 }
 
-.za-qs::before {
+.za-question2::before {
   content: "\ea2c";
 }
 
-.za-qs2::before {
+.za-reduce::before {
   content: "\ea2d";
 }
 
-.za-question2::before {
+.za-right::before {
   content: "\ea2e";
 }
 
-.za-reduce::before {
+.za-scan-qr::before {
   content: "\ea2f";
 }
 
-.za-right::before {
+.za-search::before {
   content: "\ea30";
 }
 
-.za-scan-qr::before {
+.za-selected::before {
   content: "\ea31";
 }
 
-.za-screen::before {
+.za-service::before {
   content: "\ea32";
 }
 
-.za-search::before {
+.za-setting::before {
   content: "\ea33";
 }
 
-.za-selected::before {
+.za-star-fish::before {
   content: "\ea34";
 }
 
-.za-service::before {
+.za-tech::before {
   content: "\ea35";
 }
 
-.za-setting::before {
+.za-tel::before {
   content: "\ea36";
 }
 
-.za-star-fish::before {
+.za-tel-fill::before {
   content: "\ea37";
 }
 
-.za-tech::before {
+.za-vf::before {
   content: "\ea38";
 }
 
-.za-tel::before {
-  content: "\ea39";
-}
-
-.za-tel-fill::before {
-  content: "\ea3a";
-}
-
-.za-vf::before {
-  content: "\ea3b";
-}
-
 .za-wechat-fill::before {
-  content: "\ea3c";
+  content: "\ea39";
 }
 

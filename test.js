@@ -1,3 +1,5 @@
-const arr = ["voyoc-btn"];
+const url = "/11";
+// const m=url.match(/https?:\/\/.*?(\/.*$)/)
 
-console.log(arr.includes("voyoc-btn"));
+const m = url.match(/^(\/.*)/);
+console.log(m);

@@ -14,12 +14,23 @@ import { Router } from "vue-router";
 })
 export class SettingService {
   router: Router;
+  navMenuStatus = false;
   navData: NavListItem[] = [];
   navDataFactory: NavDataHandler = new NavDataHandler();
   navDataChange: Subject<NavListItem[]> = new Subject<NavListItem[]>();
+  navMenuChange: Subject<boolean> = new Subject<boolean>();
 
+  watchNavMenuChangeImmediate() {
+    return merge(of(this.navMenuStatus), this.navMenuChange);
+  }
   watchNavDataImmediate() {
     return merge(of(this.navData), this.navDataChange);
+  }
+  navMenuTrigger() {
+    this.navMenuChange.next((this.navMenuStatus = !this.navMenuStatus));
+  }
+  navMenuClose() {
+    this.navMenuChange.next((this.navMenuStatus = false));
   }
 
   navSetNavData(navData: NavListItem[]) {
@@ -34,6 +45,7 @@ export class SettingService {
     this.navDataFactory.clickItem(item, () => {
       item.path && this.router.push(item.path);
       nextClick && nextClick(item);
+      this.navMenuClose();
     });
   }
 }

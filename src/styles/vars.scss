@@ -50,8 +50,14 @@ $filter-blur:10px;
 $base-radius:15px;
 $color-after-border:rgba(160,140,120,.4) !default;
 
-$color-white: rgba(white,.9) !default;
+$color-white: white !default;
 $color-black: black !default;
 $color-shadow: rgba(0,0,0,0.2);
 
 $color-border-card: rgb(240,240,240);
+
+$indexs:(
+  pageModal:20,
+  pageModalHeader:22,
+  pageModalFooter:21
+) !default;

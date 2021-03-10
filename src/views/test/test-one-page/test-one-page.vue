@@ -16,6 +16,10 @@ export default class extends Vue {
   testVal = "xx";
   name = 1;
   age = "";
+  pageModalShow = false;
+  closeModal() {
+    this.pageModalShow = false;
+  }
 }
 </script>
 <style scoped src="./test-one-page.scss" lang="scss"></style>

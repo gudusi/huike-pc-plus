@@ -8,3 +8,10 @@
   box-shadow: 0 2px 16px -8px vars.$color-shadow;
   border: 1px solid vars.$color-border-card;
 }
+
+@mixin filterBg2(){
+  backdrop-filter: blur(vars.$filter-blur);
+  @supports not (backdrop-filter: blur(1px)) {
+    background:var(--color-bg5);
+  }
+}

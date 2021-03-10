@@ -6,7 +6,8 @@ import {
   ElTable,
   ElSelect,
   ElTimePicker,
-  ElTimeSelect
+  ElTimeSelect,
+  ElDialog
 } from "element-plus";
 
 export const registryEle = (app: App) => {
@@ -17,4 +18,5 @@ export const registryEle = (app: App) => {
   app.component(ElSelect.name, ElSelect);
   app.component(ElTimeSelect.name, ElTimeSelect);
   app.component(ElTimePicker.name, ElTimePicker);
+  app.component(ElDialog.name, ElDialog);
 };

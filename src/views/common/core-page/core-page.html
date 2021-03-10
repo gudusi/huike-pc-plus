@@ -1,6 +1,7 @@
 <yo-bg :center="false">
     <main class="yo-core-main">
-        <nav class="yo-core-nav">
+        <yo-core-menu />
+        <nav class="yo-core-nav" :class="[menuStatus?'__mobile-show':'']">
             <div class="yo-core-nav-inner">
                 <yo-core-nav-user />
                 <yo-core-nav/>

@@ -10,7 +10,13 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-@Options({})
+import AddShop from "./add-shop-component/add-shop-component.vue";
+
+@Options({
+  components: {
+    AddShop
+  }
+})
 export default class extends Vue {
   // name:"";//竞品名称
   name = "";

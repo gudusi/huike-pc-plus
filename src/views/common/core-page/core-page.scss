@@ -1,9 +1,14 @@
 @use "../../../styles/vars";
 @use "../../../styles/deps";
 @import "~@voyo/core-style/lib/components-dep";
+@import "~ceaser-easing";
 
 $nav-width:300px;
 $main-height:90vh;
+$main-width-max:1400px;
+$menu-height:50px;
+$index-menu:5;
+$index-nav:2;
 .core-main{
   //color: #f5f5f5;
 }
@@ -15,7 +20,7 @@ $main-height:90vh;
   .yo-core-main{
     //border:1px solid gainsboro;
     width:90vw;
-    max-width: 1400px;
+    max-width: $main-width-max;
     margin:10vh auto 0 auto;
 
   }
@@ -26,7 +31,6 @@ $main-height:90vh;
     height:10px;
     position:sticky;
     top:10vh;
-    width: $nav-width;
     .yo-core-nav-inner{
       @include Radius($type:large);
       @include deps.m-filterBg;
@@ -37,14 +41,39 @@ $main-height:90vh;
 
   .yo-core-content{
     width: calc(90vw - #{$nav-width});
+    max-width: calc(#{$main-width-max} - #{$nav-width});
     display: inline-block;
     @include Radius($type:large);
     padding:0 1rem 1rem 1rem;
     overflow-y:auto;
   }
 }
-.yo-core-nav{
-  width:300px;
+@keyframes SlideLeftIn{
+  from{
+    opacity:0;
+    transform: translate3d(-30%,0,0);
+  }
+  to{}
+}
+
+@media #{vars.$media-mobile}{
+  .yo-core-main{
+    width:100%;
+  }
+  .yo-core-nav{
+    position:fixed;
+    width:100vw;
+    @include IOSSafeHeight();
+    left:0;
+    top:$menu-height;
+    z-index:1;
+    display:none;
+    @include deps.m-filterBg;
+    &.__mobile-show{
+      animation:SlideLeftIn .25s $easeOutQuart;
+      display:block;
+    }
+  }
 }
 .yo-core-user-menu-content{
   min-width:14rem;
@@ -91,4 +120,31 @@ $main-height:90vh;
   color:var(--color-font-title);
   width:3rem;
   text-align: center;
+}
+
+
+.yo-core-menu{
+  @media #{vars.$media-mobile}{
+    display:block;
+    height:$menu-height;
+    width:100%;
+    margin-bottom:1rem;
+    ._menu-bar{
+      @include deps.m-filterBg;
+      z-index:$index-menu;
+      position:fixed;
+      top:0;
+      height:$menu-height;
+      width:100%;
+      @include Shadow(tabbar)
+    }
+    ._menu-bar-btn{
+      height:100%;
+      padding:0 1rem;
+      position:relative;
+    }
+  }
+  @media #{vars.$media-pc}{
+    display:none;
+  }
 }

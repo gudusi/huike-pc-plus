@@ -1,3 +1,85 @@
-<div>
-    gamesListPage
-</div>
+
+<yo-card footerAlign="right" header="商品管理">
+    <div class="flex-between">
+        <voyoc-btn>+添加商品</voyoc-btn>
+        <div class="flex">
+            <el-input v-model="name" class="mr-2"  placeholder="竞品名称"></el-input>
+            <div>
+                <voyoc-btn-icon>
+                    <i class="za za-search"></i>
+                </voyoc-btn-icon>
+            </div>
+        </div>
+    </div>
+</yo-card>
+<!--列表-->
+<yo-card header="活动列表">
+    <div>
+        <div class="flex flex-between">
+            <div class="activi-title ">
+                <div class="ellipsis">
+                    活动名称 活动名称 <span class="mini-font">上海杨浦区五角场</span>
+                </div>
+
+            </div>
+            <div >
+                <voyoc-btn-icon color="primary" type="candy" size="mini">
+                    <i class="za za-setting " ></i>
+                </voyoc-btn-icon>
+                <voyoc-btn-icon color="error" type="candy" size="mini">
+                    <i class="za za-del "></i>
+                </voyoc-btn-icon>
+            </div>
+        </div>
+        <div class="flex px-2 voyo-border-bottom" >
+            <div class="flex-1 flex-center voyo-border-right flex-vertical-center">
+                <div class="flex-column flex-1">
+                    <div class='voyo-des-line'>
+                        2021-3-4 14:45:15 创建该活动
+                    </div>
+                    <div class="voyo-des-line font-b flex-between">
+                        <div>每轮名次人数</div>
+                        <div>10</div>
+                    </div>
+                    <div class="voyo-des-line font-b flex-between">
+                        <div>每轮游戏时长（秒）</div>
+                        <div>200</div>
+                    </div>
+                </div>
+                <div class="person-card flex-column">
+                    <div class="person-card-title">当前参与/已参与人数</div>
+                    <div class="flex-1 flex-center person-card-num">0/0</div>
+                </div>
+            </div>
+            <div class="flex-1 flex-center code-box">
+                <div class="flex-center-column self-card" v-yo-ripple>
+                    <i class="za za-qr-code voyo-color-primary2"></i>
+                    <div>二维码下载</div>
+                </div>
+                <div class="flex-center-column self-card" v-yo-ripple>
+
+                    <i class="za za-cup voyo-color-primary"></i>
+                    <div>中奖记录</div>
+
+                </div>
+                <div class="flex-center-column self-card" v-yo-ripple>
+
+                    <i class="za za-screen voyo-color-success"></i>
+                    <div>投放大屏</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <template #footer>
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="currentPage4"
+                :page-sizes="[100, 200, 300, 400]"
+                :page-size="100"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="400">
+        </el-pagination>
+    </template>
+</yo-card>

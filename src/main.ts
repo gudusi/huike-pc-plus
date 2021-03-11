@@ -7,7 +7,12 @@ import store from "./store";
 import { registryYoComponent } from "./yo";
 import { registryEle } from "./ele";
 import "./styles/media-html";
+import lang from "element-plus/lib/locale/lang/zh-cn";
+import "dayjs/locale/zh-cn";
+import locale from "element-plus/lib/locale";
 
+// 设置语言
+locale.use(lang);
 const app = createApp(App)
   .use(store)
   .use(router);

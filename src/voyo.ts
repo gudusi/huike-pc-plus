@@ -1,5 +1,5 @@
 import "@voyo/core/dest/index";
-import "@voyo/core/src/components/tab-group/tab.scss";
+// import "@voyo/core/src/components/tab-group/tab.scss";
 import { assemblyComponent } from "@voyo/core/dest/components/AssemblyComponent";
 import {
   registryButton,

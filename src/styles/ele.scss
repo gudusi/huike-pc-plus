@@ -6,6 +6,9 @@ $--input-border-color: rgb(240,240,240);
 $--input-border-radius: 20px;
 $--input-background-color: rgb(245,249,249);
 
+.el-select{
+  width:100%;
+}
 @import "~element-plus/packages/theme-chalk/src/input.scss";
 @import "~element-plus/packages/theme-chalk/src/input-number.scss";
 @import "~element-plus/packages/theme-chalk/src/pagination.scss";

@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "runtime:dev": "cross-env NODE_ENV=development & vue-cli-service serve",
-    "buid:prod": "cross-env NODE_ENV=production & vue-cli-service build",
+    "runtime:dev-main": "cross-env NODE_ENV=development VOYO_ENV=main vue-cli-service serve",
+    "buid:prod-main": "cross-env NODE_ENV=production VOYO_ENV=main vue-cli-service build",
+    "runtime:dev-game": "cross-env NODE_ENV=development VOYO_ENV=game vue-cli-service serve",
+    "buid:prod-game": "cross-env NODE_ENV=production VOYO_ENV=game vue-cli-service build",
     "webfont": "cmWebfont start",
     "lint:fix": "eslint --fix --ext .ts --ext .vue --ext .tsx src"
   },
@@ -41,6 +43,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^7.0.0-0",
+    "html-webpack-plugin": "^3.2.0",
     "lint-staged": "^9.5.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
